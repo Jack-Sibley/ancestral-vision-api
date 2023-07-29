@@ -1,8 +1,2 @@
-```
-bun install
-bun run dev
-```
-
-```
-open http://localhost:3000
-```
+# Ancestral Vision API 
+The backend api for ancestral.vision, created using Hono and Bun.
