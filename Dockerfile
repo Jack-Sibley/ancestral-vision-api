@@ -1,4 +1,4 @@
-FROM oven/bun:0.6.1
+FROM oven/bun:0.7.1
 
 COPY . .
 
