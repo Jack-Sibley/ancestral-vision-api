@@ -1,0 +1,13 @@
+{
+  "name": "ancestral-vision-api",
+  "module": "src/index.ts",
+  "type": "module",
+  "dependencies": {
+    "hono": "^3.1.8",
+    "htmlparser2": "^9.0.0",
+    "bun-types": "^0.4.0"
+  },
+  "devDependencies": {
+
+  }
+}
