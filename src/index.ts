@@ -16,7 +16,7 @@ for (const sql of createSql.split(";")) {
 }
 
 // Check if environment variables are set
-if (!Bun.env.API_USERNAME || !Bun.env.API_PASSWORD || !Bun.env.PORT) {
+if (!Bun.env.API_USERNAME || !Bun.env.API_PASSWORD) {
   console.log(Bun.env);
   console.error("API_USERNAME, API_PASSWORD or PORT not set in .env file");
   throw new Error("API_USERNAME or API_PASSWORD not set in .env file");
@@ -34,7 +34,7 @@ app.get("/sync-database", syncDatabase);
 
 export default {
   fetch: app.fetch,
-  port: Bun.env.PORT,
+  port: parseInt(Bun.env.PORT || "8080"),
   hostname: "0.0.0.0",
   development: false,
 };
