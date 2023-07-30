@@ -34,7 +34,7 @@ app.get("/sync-database", syncDatabase);
 
 export default {
   fetch: app.fetch,
-  port: parseInt(Bun.env.PORT || "8080"),
+  port: 8080,
   hostname: "0.0.0.0",
   development: false,
 };

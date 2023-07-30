@@ -7,5 +7,4 @@ COPY . .
 
 RUN bun install
 
-EXPOSE $PORT
 ENTRYPOINT ["bun", "src/index.ts"]
