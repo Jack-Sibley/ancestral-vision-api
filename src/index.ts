@@ -35,6 +35,8 @@ app.get("/sync-database", syncDatabase);
 export default {
   fetch: app.fetch,
   port: Bun.env.PORT,
+  hostname: "0.0.0.0",
+  development: false,
 };
 
 console.log(`Server started on port ${Bun.env.PORT}`);
