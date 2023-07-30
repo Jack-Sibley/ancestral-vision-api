@@ -4,4 +4,4 @@ COPY . .
 
 RUN bun install
 
-ENTRYPOINT ["bun", "src/index.ts"]
+ENTRYPOINT ["HOME=/root", "bun", "src/index.ts"]
