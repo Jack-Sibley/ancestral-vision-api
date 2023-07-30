@@ -36,7 +36,7 @@ export default {
   fetch: app.fetch,
   port: 8080,
   hostname: "0.0.0.0",
-  development: false,
+  development: true,
 };
 
 console.log(`Server started on port ${Bun.env.PORT}`);
